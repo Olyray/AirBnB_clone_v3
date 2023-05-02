@@ -96,4 +96,5 @@ class DBStorage:
         elif cls in classes.values():
             # Count the objects for just one class
             return self.__session.query(cls).count()
+        # return 0
         return 0
